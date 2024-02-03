@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="ScaleDP" Id="{8ae921b4-3b9d-40e3-ac7d-2433d67d89c1}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION ScaleDP : real
+VAR_INPUT
+	
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// Raw value of 0 to 32767 scales to -50 to +50
+
+ScaleDP:=]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

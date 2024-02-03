@@ -1,15 +1,182 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.47" ClassName="CNestedPlcProjDef">
 	<Project GUID="{AB5C5ED9-2B6A-42C7-8976-96AEFFB1B100}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{D9455C23-E62C-6427-0F3C-28283106F174}">
 			<Name>PLC1 Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>GVL_DECI.CouplerStatus</Name>
+					<Comment><![CDATA[ Coupler state - a UINT that should be 8 if its healthy]]></Comment>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term02Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term03Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term04Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term05Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term06Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term07Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term08Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term09Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term10Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term11Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term12Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term13Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term14Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term15Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term16Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term17Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term18Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term19Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term20Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term21Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term22Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term23Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term24Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term25Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term26Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term27Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term28Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term29Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term30Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term31Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term32Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term33Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term34Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term35Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term36Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_DECI.Term37Status</Name>
+					<Type>WORD</Type>
+				</Var>
+			</Vars>
 			<Contexts>
 				<Context>
-					<Id>1</Id>
-					<Name>Default</Name>
+					<Id>0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>10000000</CycleTime>
 				</Context>
 			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
 		</Instance>
 	</Project>
+	<Mappings>
+		<OwnerA Name="PLC1 Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.CouplerStatus" VarB="InfoData^State"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
 </TcSmItem>
