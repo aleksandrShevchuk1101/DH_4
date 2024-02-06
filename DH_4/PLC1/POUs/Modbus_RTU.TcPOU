@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="Modbus_RTU" Id="{0a19a29e-a247-4c7f-bce4-240fcc19830a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK Modbus_RTU
+VAR
+	MBComms1: ModbusRTU_THT;
+	MBComms2: ModbusRTU_THT;
+	MBComms3: ModbusRTU_THT;
+	MBComms4: ModbusRTU_THT;
+	MBComms5: Modbus_EM;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+MBComms1(MB_FirstUnitID:= 1, MB_LastUnitID:= 4);
+MBComms2(MB_FirstUnitID:= 5, MB_LastUnitID:= 8);
+MBComms3(MB_FirstUnitID:= 9, MB_LastUnitID:= 12);
+MBComms4(MB_FirstUnitID:= 13, MB_LastUnitID:= 14);
+MBComms5(MB_FirstUnitID:= 15, MB_LastUnitID:= 16);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

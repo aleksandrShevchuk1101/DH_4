@@ -30,6 +30,9 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\Modbus_RTU.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\ScaleDP.TcPOU">
       <SubType>Code</SubType>
     </Compile>

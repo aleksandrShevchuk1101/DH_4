@@ -4,11 +4,13 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	IOStatus: All_IO;
+	ModbusComms: Modbus_RTU;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-IOStatus();]]></ST>
+IOStatus();
+ModbusComms();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
