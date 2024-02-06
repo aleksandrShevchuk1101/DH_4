@@ -347,12 +347,28 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 13 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term13Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_02_COM_ALM" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_04_COM_ALM" VarB="Channel 7^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_06_COM_ALM" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_14_COM_ALM" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_16_COM_ALM" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_18_COM_ALM" VarB="Channel 3^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 14 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term14Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_07_COM_ALM" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_09_COM_ALM" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_11_COM_ALM" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_19_COM_ALM" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_21_COM_ALM" VarB="Channel 2^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_23_COM_ALM" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_49_COM_ALM" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_58_COM_ALM" VarB="Channel 7^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 15 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term15Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_51_COM_ALM" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_60_COM_ALM" VarB="Channel 2^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 16 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term16Status" VarB="InfoData^State"/>
