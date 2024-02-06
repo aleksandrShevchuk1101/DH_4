@@ -3,11 +3,12 @@
   <POU Name="MAIN" Id="{597f0add-bcb3-437c-8260-9c2a3e1283b3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	foo:OneIDF;
+	IOStatus: All_IO;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Term02Offline:=false;]]></ST>
+      <ST><![CDATA[
+IOStatus();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
