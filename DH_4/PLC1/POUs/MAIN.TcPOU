@@ -5,12 +5,16 @@
 VAR
 	IOStatus: All_IO;
 	ModbusComms: Modbus_RTU;
+	CRAHs: AllCRAHs;
+	CACs: AllCACs;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
 IOStatus();
-ModbusComms();]]></ST>
+ModbusComms();
+CRAHs();
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AllCRAHs" Id="{a1cd0f05-de81-4d5f-a978-134be7ade736}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AllCRAHs
+VAR
+	OneCRAH : OneCRAH;
+	
+	CRAH_40_18_COM_ALM AT %I* : BOOL;
+	CRAH_40_16_COM_ALM AT %I* : BOOL;
+	CRAH_40_14_COM_ALM AT %I* : BOOL;
+	CRAH_40_06_COM_ALM AT %I* : BOOL;
+	CRAH_40_04_COM_ALM AT %I* : BOOL;
+	CRAH_40_02_COM_ALM AT %I* : BOOL;
+	CRAH_40_23_COM_ALM AT %I* : BOOL;
+	CRAH_40_21_COM_ALM AT %I* : BOOL;
+	CRAH_40_19_COM_ALM AT %I* : BOOL;
+	CRAH_40_11_COM_ALM AT %I* : BOOL;
+	CRAH_40_09_COM_ALM AT %I* : BOOL;
+	CRAH_40_07_COM_ALM AT %I* : BOOL;
+	CRAH_40_58_COM_ALM AT %I* : BOOL;
+	CRAH_40_49_COM_ALM AT %I* : BOOL;
+	CRAH_40_51_COM_ALM AT %I* : BOOL;
+	CRAH_40_60_COM_ALM AT %I* : BOOL;
+	
+	
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
