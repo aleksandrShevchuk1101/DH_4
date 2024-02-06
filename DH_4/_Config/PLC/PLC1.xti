@@ -373,18 +373,198 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 27 (EL6021)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term27Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 0" Size="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms2.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 9" Size="8" OffsA="72"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^Ctrl" VarB="COM RxPDO-Map Outputs^Ctrl"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 0" Size="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms2.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 9" Size="8" OffsA="72"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 28 (EL6021)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term28Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 0" Size="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms3.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 9" Size="8" OffsA="72"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^Ctrl" VarB="COM RxPDO-Map Outputs^Ctrl"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 0" Size="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms3.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 9" Size="8" OffsA="72"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 29 (EL6021)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term29Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 0" Size="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms4.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 9" Size="8" OffsA="72"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^Ctrl" VarB="COM RxPDO-Map Outputs^Ctrl"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 0" Size="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms4.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 9" Size="8" OffsA="72"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 3 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term03Status" VarB="InfoData^State"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 30 (EL6021)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term30Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 0" Size="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Inputs^MAIN.ModbusComms.MBComms5.ModbusTerm.InData^D" VarB="COM TxPDO-Map Inputs^Data In 9" Size="8" OffsA="72"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^Ctrl" VarB="COM RxPDO-Map Outputs^Ctrl"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 0" Size="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 1" Size="8" OffsA="8"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 10" Size="8" OffsA="80"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 11" Size="8" OffsA="88"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 12" Size="8" OffsA="96"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 13" Size="8" OffsA="104"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 14" Size="8" OffsA="112"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 15" Size="8" OffsA="120"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 16" Size="8" OffsA="128"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 17" Size="8" OffsA="136"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 18" Size="8" OffsA="144"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 19" Size="8" OffsA="152"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 2" Size="8" OffsA="16"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 20" Size="8" OffsA="160"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 21" Size="8" OffsA="168"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 3" Size="8" OffsA="24"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 4" Size="8" OffsA="32"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 5" Size="8" OffsA="40"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 6" Size="8" OffsA="48"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 7" Size="8" OffsA="56"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 8" Size="8" OffsA="64"/>
+				<Link VarA="PlcTask Outputs^MAIN.ModbusComms.MBComms5.ModbusTerm.OutData^D" VarB="COM RxPDO-Map Outputs^Data Out 9" Size="8" OffsA="72"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 31 (EL6021)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term31Status" VarB="InfoData^State"/>
