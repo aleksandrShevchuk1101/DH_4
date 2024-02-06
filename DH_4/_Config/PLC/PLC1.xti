@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.47" ClassName="CNestedPlcProjDef">
 	<Project GUID="{AB5C5ED9-2B6A-42C7-8976-96AEFFB1B100}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{D9455C23-E62C-6427-0F3C-28283106F174}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{08EE64D6-C32F-CA06-0D63-2F813780E20C}">
 			<Name>PLC1 Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -176,6 +176,96 @@
 		<OwnerA Name="PLC1 Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.CouplerStatus" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 10 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term10Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 11 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term11Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 12 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term12Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 13 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term13Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 14 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term14Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 15 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term15Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 16 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term16Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 17 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term17Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 18 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term18Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 19 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term19Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term02Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 20 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term20Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 21 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term21Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 22 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term22Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 23 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term23Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 24 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term24Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 25 (EL3058)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term25Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 26 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term26Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 27 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term27Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 28 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term28Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 29 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term29Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 3 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term03Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 30 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term30Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 31 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term31Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 4 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term04Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 5 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term05Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 6 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term06Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 7 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term07Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 8 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term08Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 9 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_DECI.Term09Status" VarB="InfoData^State"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
