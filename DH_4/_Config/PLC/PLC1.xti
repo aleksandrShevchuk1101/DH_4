@@ -53,7 +53,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{AB5C5ED9-2B6A-42C7-8976-96AEFFB1B100}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{0C33F37A-7EA5-25C3-A14B-DC0BB7C15006}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{248FF879-7E98-62FC-1341-6284417FC417}">
 			<Name>PLC1 Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -291,6 +291,182 @@
 					<Name>MAIN.CRAHs.CRAH_40_60_COM_ALM</Name>
 					<Type>BOOL</Type>
 				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_58_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_49_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_51_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_60_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_58_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_49_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_51_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_60_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
@@ -367,26 +543,70 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 15 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term15Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_02_RUN_STS" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_04_RUN_STS" VarB="Channel 7^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_06_RUN_STS" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_14_RUN_STS" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_16_RUN_STS" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_18_RUN_STS" VarB="Channel 3^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_51_COM_ALM" VarB="Channel 1^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_60_COM_ALM" VarB="Channel 2^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 16 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term16Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_07_RUN_STS" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_09_RUN_STS" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_11_RUN_STS" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_19_RUN_STS" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_21_RUN_STS" VarB="Channel 2^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_23_RUN_STS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_49_RUN_STS" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_58_RUN_STS" VarB="Channel 7^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 17 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term17Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_14_ISOL_1_STS" VarB="Channel 7^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_14_ISOL_2_STS" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_16_ISOL_1_STS" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_16_ISOL_2_STS" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_18_ISOL_1_STS" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_18_ISOL_2_STS" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_51_RUN_STS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_60_RUN_STS" VarB="Channel 2^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 18 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term18Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_02_ISOL_1_STS" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_02_ISOL_2_STS" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_04_ISOL_1_STS" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_04_ISOL_2_STS" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_06_ISOL_1_STS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_06_ISOL_2_STS" VarB="Channel 2^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_23_ISOL_1_STS" VarB="Channel 7^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_23_ISOL_2_STS" VarB="Channel 8^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 19 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term19Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_09_ISOL_1_STS" VarB="Channel 7^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_09_ISOL_2_STS" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_11_ISOL_1_STS" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_11_ISOL_2_STS" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_19_ISOL_1_STS" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_19_ISOL_2_STS" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_21_ISOL_1_STS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_21_ISOL_2_STS" VarB="Channel 2^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term02Status" VarB="InfoData^State"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 20 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term20Status" VarB="InfoData^State"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_07_ISOL_1_STS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_07_ISOL_2_STS" VarB="Channel 2^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_49_ISOL_1_STS" VarB="Channel 4^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_51_ISOL_1_STS" VarB="Channel 5^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_58_ISOL_1_STS" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_60_ISOL_1_STS" VarB="Channel 6^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 21 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term21Status" VarB="InfoData^State"/>
