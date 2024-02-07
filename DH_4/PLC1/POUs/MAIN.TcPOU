@@ -6,6 +6,7 @@ VAR
 	IOStatus: All_IO;
 	ModbusComms: Modbus_RTU;
 	CRAHs: AllCRAHs;
+	PDUs:AllPDUs;
 	CACs: AllCACs;
 END_VAR
 ]]></Declaration>
@@ -15,6 +16,7 @@ IOStatus();
 ModbusComms();
 
 CRAHs();
+PDUs();
 ]]></ST>
     </Implementation>
   </POU>
