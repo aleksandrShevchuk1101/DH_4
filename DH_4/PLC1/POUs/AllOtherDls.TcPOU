@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AllOtherDls" Id="{07162dc3-8969-46a4-a91e-5d7a6e5b8bcb}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AllOtherDls
+VAR
+	OneDI: Lib.OneDI;
+	PSU1 	AT %I* : BOOL;
+	PSU2 	AT %I* : BOOL;
+	FAP_PNL AT %I* : BOOL;
+	FAP_LOOP_ALM AT %I* : BOOL;
+	Telce_ASD_A_PNL_ALM AT %I* : BOOL;
+	
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
