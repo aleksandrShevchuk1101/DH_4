@@ -30,6 +30,9 @@
     <Compile Include="POUs\AllCRAHs.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AllOtherDis.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\AllPDUs.TcPOU">
       <SubType>Code</SubType>
     </Compile>
