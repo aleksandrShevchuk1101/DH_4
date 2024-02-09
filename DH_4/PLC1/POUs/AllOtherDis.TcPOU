@@ -63,6 +63,8 @@ DHSDP_Healthy(Value:= DH_ASD_PNL_ALM,
 			  
 UPS_BatLow(Value:= UPS_BAT_LOW_ALM,
 		   Offline:=Lib.GVL_DECI.Term21Offline);
+		   
+		   
 
 UPS_BatMode(Value:= UPS_BAT_MODE,
 			Offline:=Lib.GVL_DECI.Term21Offline);]]></ST>
