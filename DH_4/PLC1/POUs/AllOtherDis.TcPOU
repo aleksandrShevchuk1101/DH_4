@@ -65,6 +65,9 @@ UPS_BatLow(Value:= UPS_BAT_LOW_ALM,
 		   Offline:=Lib.GVL_DECI.Term21Offline);
 		   
 		   
+		   
+		   // sdf sdf
+		   
 
 UPS_BatMode(Value:= UPS_BAT_MODE,
 			Offline:=Lib.GVL_DECI.Term21Offline);]]></ST>

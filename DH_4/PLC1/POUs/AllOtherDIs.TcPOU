@@ -1,31 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="AllOtherDIs" Id="{7853dd17-268e-4fa9-bc12-d7f442201c1f}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK AllOtherDIs
-VAR_INPUT
-END_VAR
-VAR_OUTPUT
-END_VAR
+  <POU Name="AllOtherDis" Id="{8323648f-af9f-4f33-96d0-873c1aedfd69}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AllOtherDis
 VAR
+	OneDi: Lib.OneDI;
 	
-	OneDI :LIb.OneDI;
-	
-	PSU1_ALM AT %I* :BOOL;
-	PSU2_ALM AT %I* :BOOL;
+	PSU1_ALM AT %I* : BOOL;
+	PSU2_ALM AT %I* : BOOL;
+	FAP_PNL_ALM AT %I* : BOOL;
+	FAP_LOOP_ALM AT %I* : BOOL;
 	Telco_ASD_A_PNL_ALM AT %I* : BOOL;
 	Telco_ASD_B_PNL_ALM AT %I* : BOOL;
 	DH_ASD_PNL_ALM AT %I* : BOOL;
 	
+	
 	PSU1_Healthy: OneDI;
-	PSU2_Healthy: OneDI;	
+	PSU2_Healthy: OneDI;
+	FAP_Healthy: OneDI;
+	FAPL_Healthy: OneDI;
 	TelcoSDP_A_Healthy: OneDI;
 	TelcoSDP_B_Healthy: OneDI;
 	DHSDP_Healthy: OneDI;
 	
-	// BK: hardwired UPS indications added 20-Nov-2023	
 	UPS_BAT_LOW_ALM AT %I* : BOOL;
-	UPS_BAT_MODE AT %I* : BOOL;
-
+	UPS_BAT_MODE    AT %I* : BOOL;
+	
 	UPS_BatLow: OneDI;
 	UPS_BatMode: OneDI;
 	
@@ -34,37 +33,44 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-Lib.GVL.nInputCoilIndex      := Lib.GVL_DataHalls.StartInputCoilIndex_OtherDIs;
-Lib.GVL.nOutputCoilIndex     := Lib.GVL_DataHalls.StartOutputCoilIndex_OtherDIs;
-Lib.GVL.nInputRegisterIndex  := Lib.GVL_DataHalls.StartInputRegisterIndex_OtherDIs;
-Lib.GVL.nOutputRegisterIndex := Lib.GVL_DataHalls.StartOutputRegisterIndex_OtherDIs;
+Lib.GVL.nInputCoilIndex     := Lib.GVL_DataHalls.StartInputCoilIndex_OtherDIs;
+Lib.GVL.nOutputCoilIndex    := Lib.GVL_DataHalls.StartOutputCoilIndex_OtherDIs;
+Lib.GVL.nInputRegisterIndex := Lib.GVL_DataHalls.StartInputRegisterIndex_OtherDIs;
+Lib.GVL.nOutputRegisterIndex:= Lib.GVL_DataHalls.StartOutputRegisterIndex_OtherDIs;
+
 
 PSU1_Healthy(Value:=PSU1_ALM,
-			 Offline:=Lib.GVL_DECI.Term13Offline );
-
-PSU2_Healthy(Value:=PSU2_ALM,
-			 Offline:=Lib.GVL_DECI.Term13Offline );
+			 Offline:= Lib.GVL_DECI.Term13Offline);
 			 
-TelcoSDP_A_Healthy(Value:= Telco_ASD_A_PNL_ALM ,
-					Offline:=Lib.GVL_DECI.Term21Offline);
-					
-					
+PSU2_Healthy(Value:=PSU2_ALM,
+			 Offline:= Lib.GVL_DECI.Term13Offline);	
+		 
+FAP_Healthy(Value:= FAP_PNL_ALM,
+			Offline:= Lib.GVL_DECI.Term20Offline);
+			
+FAPL_Healthy(Value:= FAP_LOOP_ALM,
+			 Offline:= Lib.GVL_DECI.Term20Offline);
+			 
+TelcoSDP_A_Healthy(Value:= Telco_ASD_A_PNL_ALM,
+				   Offline:= Lib.GVL_DECI.Term21Offline );
+
 TelcoSDP_B_Healthy(Value:= Telco_ASD_B_PNL_ALM,
-					Offline:=Lib.GVL_DECI.Term21Offline);
-					
-					
+				   Offline:= Lib.GVL_DECI.Term21Offline);
+
 DHSDP_Healthy(Value:= DH_ASD_PNL_ALM,
-			 Offline:=Lib.GVL_DECI.Term21Offline);	
+			  Offline:= Lib.GVL_DECI.Term21Offline);
+			  
+			  
+UPS_BatLow(Value:= UPS_BAT_LOW_ALM,
+		   Offline:=Lib.GVL_DECI.Term21Offline);
+		   
+		   
+		   
+		   // sdf sdf
+		   
 
-
-UPS_BatLow (Value:= UPS_BAT_LOW_ALM, Offline:= Lib.GVL_DECI.Term21Offline);
-
-UPS_BatMode(Value:= UPS_BAT_MODE, Offline:= Lib.GVL_DECI.Term21Offline);
-
-
-
-
-			]]></ST>
+UPS_BatMode(Value:= UPS_BAT_MODE,
+			Offline:=Lib.GVL_DECI.Term21Offline);]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
