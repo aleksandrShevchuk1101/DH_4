@@ -11,7 +11,7 @@ VAR
 	IDF: AlllDF;
 	OtherDIs: AllOtherDIs;
 	EnergyMeters: AllEMeters;
-	RTUStatus:AllRTUStat;
+	SystemTimeCall: SystemTime;
 	
 	
 	
@@ -29,15 +29,10 @@ PDUs();
 IDF();
 OtherDIs();
 EnergyMeters();
-
+SystemTimeCall();]]></ST>
 IOStatus();
 RTUStatus();
 
-
-
-
-
-]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
