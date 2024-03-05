@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AlllDF" Id="{70dc034e-de0a-4fe6-b578-b94369d9b0f5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AlllDF
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	OneIDF : Lib.OneIDF;	
+
+	IDF15_2_A : OneIDF;
+	
+	IDF15_2_A_SPD_STS          AT %I*:BOOL;
+	IDF15_2_A_PF_ALM           AT %I*:BOOL;
+	IDF15_2_A_115_BKR_STS 	   AT %I*:BOOL;
+	IDF15_2_A_115_BKR_TRIP_ALM AT %I*:BOOL;
+	IDF15_2_A_125_BKR_STS      AT %I*:BOOL;
+	IDF15_2_A_125_BKR_TRIP_ALM AT %I*:BOOL;
+
+	IDF16_2_B : OneIDF;
+	
+	IDF16_2_B_SPD_STS          AT %I*:BOOL;
+	IDF16_2_B_PF_ALM           AT %I*:BOOL;
+	IDF16_2_B_115_BKR_STS 	   AT %I*:BOOL;
+	IDF16_2_B_115_BKR_TRIP_ALM AT %I*:BOOL;
+	IDF16_2_B_125_BKR_STS      AT %I*:BOOL;
+	IDF16_2_B_125_BKR_TRIP_ALM AT %I*:BOOL;
+	
+	// BK: hardwired trip indications added 20-Nov-2023	
+	IDF15_2_A_XT4S_10F1_TRIP_ALM AT %I* : BOOL;
+	IDF16_2_B_XT4S_10F1_TRIP_ALM AT %I* : BOOL;
+	
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Lib.GVL.nInputCoilIndex := Lib.GVL_DataHalls.StartInputCoilIndex_IDF;
+Lib.GVL.nOutputCoilIndex := Lib.GVL_DataHalls.StartoutputCoilIndex_IDF;
+Lib.GVL.nInputRegisterIndex := Lib.GVL_DataHalls.StartInputRegisterIndex_IDF;
+Lib.GVL.nOutputRegisterIndex := Lib.GVL_DataHalls.StartoutputRegisterIndex_IDF;
+
+IDF15_2_A(
+	sur_STS:= IDF15_2_A_SPD_STS, 
+	phs_ALM:= IDF15_2_A_PF_ALM, 
+	sur_phs_offline:= GVL_DECI.Term02Offline, 
+	BRK115_POS_STS:=  IDF15_2_A_115_BKR_STS, 
+	BRK115_TRIP_ALM:= IDF15_2_A_115_BKR_TRIP_ALM, 
+	BRK115_offline:=  GVL_DECI.Term02Offline, 
+	BRK125_POS_STS:=  IDF15_2_A_125_BKR_STS, 
+	BRK125_TRIP_ALM:= IDF15_2_A_125_BKR_TRIP_ALM, 
+	BRK125_offline:= GVL_DECI.Term21Offline
+
+		);
+		
+IDF16_2_B(
+	sur_STS:= IDF16_2_B_SPD_STS, 
+	phs_ALM:= IDF16_2_B_PF_ALM, 
+	sur_phs_offline:= GVL_DECI.Term02Offline, 
+	BRK115_POS_STS:= IDF16_2_B_115_BKR_STS, 
+	BRK115_TRIP_ALM:= IDF16_2_B_115_BKR_TRIP_ALM, 
+	BRK115_offline:= GVL_DECI.Term03Offline, 
+	BRK125_POS_STS:= IDF16_2_B_125_BKR_STS, 
+	BRK125_TRIP_ALM:= IDF16_2_B_125_BKR_TRIP_ALM, 
+	BRK125_offline:= GVL_DECI.Term21Offline
+	
+		);
+	
+	
+	
+	]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
