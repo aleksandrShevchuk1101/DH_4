@@ -53,7 +53,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{AB5C5ED9-2B6A-42C7-8976-96AEFFB1B100}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{D5B7424A-FD7C-5015-6C19-4590179324E0}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{54AF9ED4-E2E5-80AB-99B7-9F0D4C3EA8C6}">
 			<Name>PLC1 Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -206,266 +206,6 @@
 				<Var>
 					<Name>GVL_DECI.Term37Status</Name>
 					<Type>WORD</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.ModbusComms.MBComms1.ModbusTerm.InData</Name>
-					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.ModbusComms.MBComms2.ModbusTerm.InData</Name>
-					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.ModbusComms.MBComms3.ModbusTerm.InData</Name>
-					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.ModbusComms.MBComms4.ModbusTerm.InData</Name>
-					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.ModbusComms.MBComms5.ModbusTerm.InData</Name>
-					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_18_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_16_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_14_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_06_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_04_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_02_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_23_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_21_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_19_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_11_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_09_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_07_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_58_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_49_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_51_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_60_COM_ALM</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_18_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_16_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_14_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_06_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_04_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_02_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_23_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_21_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_19_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_11_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_09_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_07_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_58_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_49_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_51_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_60_RUN_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_18_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_18_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_16_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_16_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_14_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_14_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_06_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_06_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_04_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_04_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_02_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_02_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_23_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_23_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_21_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_21_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_19_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_19_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_11_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_11_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_09_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_09_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_07_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_07_ISOL_2_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_58_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_49_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_51_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>MAIN.CRAHs.CRAH_40_60_ISOL_1_STS</Name>
-					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>MAIN.PDUs.PDU17_4_4_1_SPD_STS</Name>
@@ -772,6 +512,246 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_58_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_49_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_51_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_60_COM_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_58_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_49_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_51_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_60_RUN_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_18_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_16_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_14_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_06_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_04_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_02_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_23_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_21_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_19_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_11_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_09_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_07_ISOL_2_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_58_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_49_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_51_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.CRAHs.CRAH_40_60_ISOL_1_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>MAIN.IDF.IDF15_2_A_SPD_STS</Name>
 					<Type>BOOL</Type>
 				</Var>
@@ -837,6 +817,14 @@
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
+					<Name>MAIN.OtherDIs.FAP_PNL_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.FAP_LOOP_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
 					<Name>MAIN.OtherDIs.Telco_ASD_A_PNL_ALM</Name>
 					<Type>BOOL</Type>
 				</Var>
@@ -850,12 +838,31 @@
 				</Var>
 				<Var>
 					<Name>MAIN.OtherDIs.UPS_BAT_LOW_ALM</Name>
-					<Comment><![CDATA[ BK: hardwired UPS indications added 20-Nov-2023	]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
 					<Name>MAIN.OtherDIs.UPS_BAT_MODE</Name>
 					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms1.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms2.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms3.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms4.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms5.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
@@ -990,8 +997,6 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term02Status" VarB="InfoData^State"/>
-				<Link VarA="PlcTask Inputs^MAIN.IDF.IDF15_2_A_PF_ALM" VarB="Channel 2^LAU-TEL-L4-Z4-38A_IDF15.2.A_VMR_30B1.PF_ALM" Size="1"/>
-				<Link VarA="PlcTask Inputs^MAIN.IDF.IDF15_2_A_SPD_STS" VarB="Channel 1^LAU-TEL-L4-Z4-38A_IDF15.2.A_SPD_20F1.SPD_STS" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 20 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term20Status" VarB="InfoData^State"/>

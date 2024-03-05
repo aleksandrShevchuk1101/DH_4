@@ -3,36 +3,39 @@
   <POU Name="MAIN" Id="{597f0add-bcb3-437c-8260-9c2a3e1283b3}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	IOStatus: All_IO;
-	ModbusComms: Modbus_RTU;
-	CRAHs: AllCRAHs;
 	PDUs:AllPDUs;
+	CRAHs: AllCRAHs;
+	IOStatus: All_IO;
+	RTUStatus: AllRTUStat;
 	CACs: AllCACs;
 	IDF: AlllDF;
 	OtherDIs: AllOtherDIs;
 	EnergyMeters: AllEMeters;
 	SystemTimeCall: SystemTime;
+	ModbusComms: Modbus_RTU;
 	
-	
-	
-	
-	
+	bEmpryVar: BOOL;
+	fTestFloat: REAL;
+	bTestBool: BOOL;
+	wTestWord: WORD;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-
 ModbusComms();
 
 CRAHs();
+CACs();
 PDUs();
 IDF();
 OtherDIs();
 EnergyMeters();
-SystemTimeCall();]]></ST>
+
 IOStatus();
 RTUStatus();
 
+SystemTimeCall();
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

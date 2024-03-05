@@ -21,7 +21,7 @@ fbGetLocalSystemTime(
 	systemTime=> , 
 	tzID=> );
 
-Lib.GVL_DECI.sSystemDateTime :=  SYSTEMTIME_TO_STRING(Lib.GVL_DECI.fbGetLocalSystemTime);
+Lib.GVL_DECI.sSystemDateTime :=  SYSTEMTIME_TO_STRING(Lib.GVL_DECI.fbGetLocalSystemTime.systemTime);
 Lib.GVL_DECI.sSystemDate:= MID(STR:=Lib.GVL_DECI.sSystemDateTime, LEN:=10, POS:=1);
 Lib.GVL_DECI.sSystemTime:= MID(STR:=Lib.GVL_DECI.sSystemDateTime, LEN:=8, POS:=12);
 

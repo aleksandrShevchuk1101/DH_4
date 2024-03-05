@@ -35,8 +35,8 @@ Lib.GVL.mb_Input_Coils[i+11] := Lib.GVL_THT.THT[12].CommsError;
 Lib.GVL.mb_Input_Coils[i+12] := Lib.GVL_THT.THT[13].CommsError;
 Lib.GVL.mb_Input_Coils[i+13] := Lib.GVL_THT.THT[14].CommsError;
 
-Lib.GVL.mb_Input_Coils[i+14] := Lib.GVL_THT.THT[15].CommsError;
-Lib.GVL.mb_Input_Coils[i+15] := Lib.GVL_THT.THT[16].CommsError;
+//Lib.GVL.mb_Input_Coils[i+14] := Lib.GVL_THT.THT[15].CommsError;
+//Lib.GVL.mb_Input_Coils[i+15] := Lib.GVL_THT.THT[16].CommsError;
 
 i:=Lib.GVL.nInputRegisterIndex;
 
@@ -55,7 +55,7 @@ Lib.GVL.mb_Input_Registers[i+11]:= INT_TO_WORD(Lib.GVL_THt.THT[12].CommsErrorCod
 
 Lib.GVL.mb_Input_Registers[i+12]:= INT_TO_WORD(Lib.GVL_THt.THT[13].CommsErrorCode);
 Lib.GVL.mb_Input_Registers[i+13]:= INT_TO_WORD(Lib.GVL_THt.THT[14].CommsErrorCode);
-Lib.GVL.mb_Input_Registers[i+14]:= INT_TO_WORD(Lib.GVL_THt.THT[15].CommsErrorCode);
+//Lib.GVL.mb_Input_Registers[i+14]:= INT_TO_WORD(Lib.GVL_THt.THT[15].CommsErrorCode);
 
 
 
