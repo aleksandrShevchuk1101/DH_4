@@ -7,12 +7,12 @@
 			<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 			<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 			<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
-				<Entry Name="Input" Index="#x6000" Sub="#x01">
+				<Entry Name="LAU-TEL-L4-Z4-38B_CE-4-4_PSU.PSU1_ALM" Index="#x6000" Sub="#x01">
 					<Type>BIT</Type>
 				</Entry>
 			</Pdo>
 			<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
-				<Entry Name="Input" Index="#x6010" Sub="#x01">
+				<Entry Name="LAU-TEL-L4-Z4-38B_CE-4-4_PSU.PSU2_ALM" Index="#x6010" Sub="#x01">
 					<Type>BIT</Type>
 				</Entry>
 			</Pdo>

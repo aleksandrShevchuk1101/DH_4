@@ -30,7 +30,19 @@
     <Compile Include="POUs\AllCRAHs.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AllEMeters.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\AlllDF.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\AllOtherDIs.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\AllPDUs.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\AllRTUStat.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\All_IO.TcPOU">

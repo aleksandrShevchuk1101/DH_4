@@ -53,7 +53,7 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{AB5C5ED9-2B6A-42C7-8976-96AEFFB1B100}" Name="PLC1" PrjFilePath="..\..\PLC1\PLC1.plcproj" TmcFilePath="..\..\PLC1\PLC1.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{79A3EE6C-C82D-83D9-4CDD-01D06D8B55A5}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC1\PLC1.tmc" TmcHash="{D5B7424A-FD7C-5015-6C19-4590179324E0}">
 			<Name>PLC1 Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
@@ -771,6 +771,92 @@
 					<Name>MAIN.PDUs.PDU17_4_4_4_335_BKR_TRIP_ALM</Name>
 					<Type>BOOL</Type>
 				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_SPD_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_PF_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_115_BKR_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_115_BKR_TRIP_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_125_BKR_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_125_BKR_TRIP_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_SPD_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_PF_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_115_BKR_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_115_BKR_TRIP_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_125_BKR_STS</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_125_BKR_TRIP_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF15_2_A_XT4S_10F1_TRIP_ALM</Name>
+					<Comment><![CDATA[ BK: hardwired trip indications added 20-Nov-2023	]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.IDF.IDF16_2_B_XT4S_10F1_TRIP_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.PSU1_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.PSU2_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.Telco_ASD_A_PNL_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.Telco_ASD_B_PNL_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.DH_ASD_PNL_ALM</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.UPS_BAT_LOW_ALM</Name>
+					<Comment><![CDATA[ BK: hardwired UPS indications added 20-Nov-2023	]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.OtherDIs.UPS_BAT_MODE</Name>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>PlcTask Outputs</Name>
@@ -833,6 +919,8 @@
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_14_COM_ALM" VarB="Channel 5^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_16_COM_ALM" VarB="Channel 4^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_18_COM_ALM" VarB="Channel 3^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.OtherDIs.PSU1_ALM" VarB="Channel 1^LAU-TEL-L4-Z4-38B_CE-4-4_PSU.PSU1_ALM" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.OtherDIs.PSU2_ALM" VarB="Channel 2^LAU-TEL-L4-Z4-38B_CE-4-4_PSU.PSU2_ALM" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 14 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term14Status" VarB="InfoData^State"/>
@@ -902,7 +990,8 @@
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term02Status" VarB="InfoData^State"/>
-				<Link VarA="PlcTask Inputs^MAIN.PDUs.PDU17_4_4_1_SPD_STS" VarB="Channel 1^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.IDF.IDF15_2_A_PF_ALM" VarB="Channel 2^LAU-TEL-L4-Z4-38A_IDF15.2.A_VMR_30B1.PF_ALM" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.IDF.IDF15_2_A_SPD_STS" VarB="Channel 1^LAU-TEL-L4-Z4-38A_IDF15.2.A_SPD_20F1.SPD_STS" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 20 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term20Status" VarB="InfoData^State"/>
@@ -912,6 +1001,8 @@
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_51_ISOL_1_STS" VarB="Channel 5^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_58_ISOL_1_STS" VarB="Channel 3^Input" Size="1"/>
 				<Link VarA="PlcTask Inputs^MAIN.CRAHs.CRAH_40_60_ISOL_1_STS" VarB="Channel 6^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.OtherDIs.DH_ASD_PNL_ALM" VarB="Channel 8^Input" Size="1"/>
+				<Link VarA="PlcTask Inputs^MAIN.OtherDIs.Telco_ASD_A_PNL_ALM" VarB="Channel 7^Input" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 21 (EL1008)">
 				<Link VarA="PlcTask Inputs^GVL_DECI.Term21Status" VarB="InfoData^State"/>

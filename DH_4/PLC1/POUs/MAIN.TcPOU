@@ -8,15 +8,35 @@ VAR
 	CRAHs: AllCRAHs;
 	PDUs:AllPDUs;
 	CACs: AllCACs;
+	IDF: AlllDF;
+	OtherDIs: AllOtherDIs;
+	EnergyMeters: AllEMeters;
+	RTUStatus:AllRTUStat;
+	
+	
+	
+	
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
-IOStatus();
+
 ModbusComms();
 
 CRAHs();
 PDUs();
+IDF();
+OtherDIs();
+EnergyMeters();
+
+IOStatus();
+RTUStatus();
+
+
+
+
+
 ]]></ST>
     </Implementation>
   </POU>
