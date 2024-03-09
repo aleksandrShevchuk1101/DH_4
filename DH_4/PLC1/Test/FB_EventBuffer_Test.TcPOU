@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_EventBuffer_Test" Id="{8004f1e1-abd0-4bba-9a27-5c9e620491ec}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_EventBuffer_Test EXTENDS FB_TestSuite
+VAR
+	
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+AddThreeEvents();
+]]></ST>
+    </Implementation>
+    <Method Name="AddThreeEvents" Id="{88ebe1d5-a1e2-4ff0-825e-8ae89792d5d6}">
+      <Declaration><![CDATA[METHOD PRIVATE AddThreeEvents
+VAR
+	
+	bOk: BOOL;
+	nFoo:UDINT;
+	
+	
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[
+Test("AddThreeEvents");
+
+
+	bOk:=FALSE;
+
+	AssertTrue(Condition:=bOk, Message:="bool variable");
+	
+	
+	nFoo:=1;
+	
+	
+	AssertEquals_UDINT(Expected :=1, Actual:=nFoo, Message:="udint variable");
+	
+	
+	
+
+TEST_FINISHED();
+]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>
