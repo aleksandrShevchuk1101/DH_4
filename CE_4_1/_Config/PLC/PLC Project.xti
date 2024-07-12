@@ -1,15 +1,388 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.47" ClassName="CNestedPlcProjDef">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU" AutoDeleteType="true">MB_KL6inData22B</Name>
+			<BitSize>192</BitSize>
+			<SubItem>
+				<Name>Status</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>22</Elements>
+				</ArrayInfo>
+				<BitSize>176</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<Properties>
+				<Property>
+					<Name>hide</Name>
+				</Property>
+			</Properties>
+		</DataType>
+		<DataType>
+			<Name GUID="{396204E3-6BB8-5237-B2D7-CE0FF3436678}" Namespace="Lib.Tc2_ModbusRTU" AutoDeleteType="true">MB_KL6outData22B</Name>
+			<BitSize>192</BitSize>
+			<SubItem>
+				<Name>Ctrl</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+				<BitSize>16</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>D</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+				<ArrayInfo>
+					<LBound>0</LBound>
+					<Elements>22</Elements>
+				</ArrayInfo>
+				<BitSize>176</BitSize>
+				<BitOffs>16</BitOffs>
+			</SubItem>
+			<Properties>
+				<Property>
+					<Name>hide</Name>
+				</Property>
+			</Properties>
+		</DataType>
+	</DataTypes>
 	<Project GUID="{71FF0F01-5168-4307-8366-98A5096417FF}" Name="PLC Project" PrjFilePath="..\..\PLC Project\PLC Project.plcproj" TmcFilePath="..\..\PLC Project\PLC Project.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC Project\PLC Project.tmc" TmcHash="{1A9F7004-69C6-53FD-5F96-74BA58CEFB2C}">
 			<Name>PLC Project Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+			<Vars VarGrpType="1">
+				<Name>PlcTask Inputs</Name>
+				<Var>
+					<Name>GVL_HW.CouplerStatus</Name>
+					<Comment><![CDATA[ Coupler state - a UINT that should be 8 if its healthy]]></Comment>
+					<Type>UINT</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term02Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term03Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term04Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term05Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term06Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term07Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term08Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term09Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term10Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term11Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term12Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term13Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term14Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term15Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term16Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term17Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term18Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term19Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term20Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term21Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term22Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term23Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term24Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term25Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term26Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term27Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term28Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term29Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term30Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term31Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term32Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term33Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term34Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term35Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term36Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term37Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term38Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term39Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>GVL_HW.Term40Status</Name>
+					<Type>WORD</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms1.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms2.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms3.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms4.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms5.ModbusTerm.InData</Name>
+					<Type GUID="{651229BA-D3C7-D964-9F8F-FD6D220068C5}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6inData22B</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="2" AreaNo="1">
+				<Name>PlcTask Outputs</Name>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms1.ModbusTerm.OutData</Name>
+					<Type GUID="{396204E3-6BB8-5237-B2D7-CE0FF3436678}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms2.ModbusTerm.OutData</Name>
+					<Type GUID="{396204E3-6BB8-5237-B2D7-CE0FF3436678}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms3.ModbusTerm.OutData</Name>
+					<Type GUID="{396204E3-6BB8-5237-B2D7-CE0FF3436678}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms4.ModbusTerm.OutData</Name>
+					<Type GUID="{396204E3-6BB8-5237-B2D7-CE0FF3436678}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>MAIN.ModbusComms.MBComms5.ModbusTerm.OutData</Name>
+					<Type GUID="{396204E3-6BB8-5237-B2D7-CE0FF3436678}" Namespace="Lib.Tc2_ModbusRTU">MB_KL6outData22B</Type>
+				</Var>
+			</Vars>
 			<Contexts>
 				<Context>
-					<Id>1</Id>
-					<Name>Default</Name>
+					<Id>0</Id>
+					<Name>PlcTask</Name>
+					<ManualConfig>
+						<OTCID>#x02010030</OTCID>
+					</ManualConfig>
+					<Priority>20</Priority>
+					<CycleTime>10000000</CycleTime>
 				</Context>
 			</Contexts>
+			<TaskPouOids>
+				<TaskPouOid Prio="20" OTCID="#x08502001"/>
+			</TaskPouOids>
 		</Instance>
 	</Project>
+	<Mappings>
+		<OwnerA Name="PLC Project Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)">
+				<Link VarA="PlcTask Inputs^GVL_HW.CouplerStatus" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 10 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term10Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 11 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term11Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 12 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term12Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 13 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term13Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 14 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term14Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 15 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term15Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 16 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term16Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 17 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term17Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 18 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term18Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 19 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term19Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL1018)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term02Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 20 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term20Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 21 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term21Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 22 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term22Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 23 (EL9410)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term23Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 24 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term24Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 25 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term25Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 26 (EL3058)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term26Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 27 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term27Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 28 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term28Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 29 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term29Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 3 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term03Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 30 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term30Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 31 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term31Status" VarB="COM TxPDO-Map Inputs^Status"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 32 (EL6021)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term32Status" VarB="COM TxPDO-Map Inputs^Status"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 33 (EL1018)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term33Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 34 (EL1018)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term34Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 4 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term04Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 5 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term05Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 6 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term06Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 7 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term07Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 8 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term08Status" VarB="InfoData^State"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 9 (EL1008)">
+				<Link VarA="PlcTask Inputs^GVL_HW.Term09Status" VarB="InfoData^State"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
 </TcSmItem>

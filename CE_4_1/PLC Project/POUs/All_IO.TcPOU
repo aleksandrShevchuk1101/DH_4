@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="All_IO" Id="{381acf93-421f-4974-86cd-e13c2612087b}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK All_IO
+VAR_TEMP
+	i : INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//Lib.GVL_HW.CouplerOffline : = ]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
