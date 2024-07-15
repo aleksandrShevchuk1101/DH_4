@@ -4,13 +4,15 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	
-
+	CRAHs : AllCRAHs;
+	
 	ModbusComms: ModbusRTU;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[ModbusComms();
-]]></ST>
+
+CRAHs();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

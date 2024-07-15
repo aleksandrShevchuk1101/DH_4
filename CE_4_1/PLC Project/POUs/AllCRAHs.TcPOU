@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AllCRAHs" Id="{82d9922c-8d49-4e3e-a9ce-793e75faaf57}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AllCRAHs
+VAR
+	OneCRAH : Lib.OneCRAH;
+	CRAH_40_18_COM_ALM AT %I*: BOOL;
+	CRAH_40_16_COM_ALM AT %I*: BOOL;
+	CRAH_40_14_COM_ALM AT %I*: BOOL;
+	CRAH_40_06_COM_ALM AT %I*: BOOL;
+	CRAH_40_04_COM_ALM AT %I*: BOOL;
+	CRAH_40_02_COM_ALM AT %I*: BOOL;
+	CRAH_40_23_COM_ALM AT %I*: BOOL;
+	CRAH_40_21_COM_ALM AT %I*: BOOL;
+	CRAH_40_19_COM_ALM AT %I*: BOOL;
+	CRAH_40_11_COM_ALM AT %I*: BOOL;
+	CRAH_40_09_COM_ALM AT %I*: BOOL;
+	CRAH_40_07_COM_ALM AT %I*: BOOL;
+	CRAH_40_58_COM_ALM AT %I*: BOOL;
+	CRAH_40_49_COM_ALM AT %I*: BOOL;
+	CRAH_40_51_COM_ALM AT %I*: BOOL;
+	CRAH_40_60_COM_ALM AT %I*: BOOL;
+	
+	
+	CRAH_40_18_RUN_STS AT %I*: BOOL;
+	CRAH_40_16_RUN_STS AT %I*: BOOL;
+	CRAH_40_14_RUN_STS AT %I*: BOOL;
+	CRAH_40_06_RUN_STS AT %I*: BOOL;
+	CRAH_40_04_RUN_STS AT %I*: BOOL;
+	CRAH_40_02_RUN_STS AT %I*: BOOL;
+	CRAH_40_23_RUN_STS AT %I*: BOOL;
+	CRAH_40_21_RUN_STS AT %I*: BOOL;
+	CRAH_40_19_RUN_STS AT %I*: BOOL;
+	CRAH_40_11_RUN_STS AT %I*: BOOL;
+	CRAH_40_09_RUN_STS AT %I*: BOOL;
+	CRAH_40_07_RUN_STS AT %I*: BOOL;
+	CRAH_40_58_RUN_STS AT %I*: BOOL;
+	CRAH_40_49_RUN_STS AT %I*: BOOL;
+	CRAH_40_51_RUN_STS AT %I*: BOOL;
+	CRAH_40_60_RUN_STS AT %I*: BOOL;
+	
+	
+	CRAH_40_18_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_18_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_16_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_16_ISOL_2_STS AT %I*: BOOL;
+	CRAH_40_14_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_14_ISOL_2_STS AT %I*: BOOL;
+	CRAH_40_06_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_06_ISOL_2_STS AT %I*: BOOL;		
+	CRAH_40_04_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_04_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_02_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_02_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_23_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_23_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_21_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_21_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_19_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_19_ISOL_2_STS AT %I*: BOOL;
+	CRAH_40_11_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_11_ISOL_2_STS AT %I*: BOOL;
+	CRAH_40_09_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_09_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_07_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_07_ISOL_2_STS AT %I*: BOOL;
+	CRAH_40_58_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_58_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_49_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_49_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_51_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_51_ISOL_2_STS AT %I*: BOOL;	
+	CRAH_40_60_ISOL_1_STS AT %I*: BOOL;
+	CRAH_40_60_ISOL_2_STS AT %I*: BOOL;
+	
+	CRAH_40_18: OneCRAH;
+	CRAH_40_16: OneCRAH;
+	CRAH_40_14: OneCRAH;
+	CRAH_40_06: OneCRAH;
+	
+	CRAH_40_04: OneCRAH;
+	CRAH_40_02: OneCRAH;
+	CRAH_40_23: OneCRAH;
+	CRAH_40_21: OneCRAH;
+	
+	CRAH_40_19: OneCRAH;
+	CRAH_40_11: OneCRAH;
+	CRAH_40_09: OneCRAH;
+	CRAH_40_07: OneCRAH;
+	
+	CRAH_40_58: OneCRAH;
+	CRAH_40_49: OneCRAH;
+	CRAH_40_51: OneCRAH;
+	CRAH_40_60: OneCRAH;
+	
+	AnyIOOffline: BOOL;
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+Lib.GVL.nInputCoilIndex      := Lib.GVL_DataHalls.StartInputCoilIndex_CRAH;
+Lib.GVL.nOutputCoilIndex     := Lib.GVL_DataHalls.StartOutputCoilIndex_CRAH;
+Lib.GVL.nInputRegisterIndex  := Lib.GVL_DataHalls.StartInputRegisterIndex_CRAH;
+Lib.GVL.nOutputRegisterIndex := Lib.GVL_DataHalls.StartOutputRegisterIndex_CRAH;
+
+
+AnyIOOffline:= Lib.GVl_hw.Term13Offline OR Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term17Offline;
+CRAH_40_18(
+	Running:= CRAH_40_18_RUN_STS, 
+	Alarm:= CRAH_40_18_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_18_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_18_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+AnyIOOffline:= Lib.GVl_hw.Term13Offline OR Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term17Offline;
+CRAH_40_16(
+	Running:= CRAH_40_16_RUN_STS, 
+	Alarm:= CRAH_40_16_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_16_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_16_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term13Offline OR Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term17Offline;
+CRAH_40_14(
+	Running:= CRAH_40_14_RUN_STS, 
+	Alarm:= CRAH_40_14_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_14_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_14_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term13Offline OR Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term18Offline;
+CRAH_40_06(
+	Running:= CRAH_40_06_RUN_STS, 
+	Alarm:= CRAH_40_06_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_06_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_06_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term13Offline OR Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term18Offline;
+CRAH_40_04(
+	Running:= CRAH_40_04_RUN_STS, 
+	Alarm:= CRAH_40_04_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_04_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_04_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term13Offline OR Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term18Offline;
+CRAH_40_02(
+	Running:= CRAH_40_02_RUN_STS, 
+	Alarm:= CRAH_40_02_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_02_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_02_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term18Offline;
+CRAH_40_23(
+	Running:= CRAH_40_23_RUN_STS, 
+	Alarm:= CRAH_40_23_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_23_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_23_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term19Offline;
+CRAH_40_21(
+	Running:= CRAH_40_21_RUN_STS, 
+	Alarm:= CRAH_40_21_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_21_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_21_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term19Offline;
+CRAH_40_19(
+	Running:= CRAH_40_19_RUN_STS, 
+	Alarm:= CRAH_40_19_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_19_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_19_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term19Offline;
+CRAH_40_11(
+	Running:= CRAH_40_11_RUN_STS, 
+	Alarm:= CRAH_40_11_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_11_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_11_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term19Offline;
+CRAH_40_09(
+	Running:= CRAH_40_09_RUN_STS, 
+	Alarm:= CRAH_40_09_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_09_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_09_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term19Offline;
+CRAH_40_07(
+	Running:= CRAH_40_07_RUN_STS, 
+	Alarm:= CRAH_40_07_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_07_ISOL_1_STS, 
+	Iso1_2_Sts:= CRAH_40_07_ISOL_2_STS, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term20Offline;
+CRAH_40_58(
+	Running:= CRAH_40_58_RUN_STS, 
+	Alarm:= CRAH_40_58_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_58_ISOL_1_STS, 
+	Iso1_2_Sts:= FALSE, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term14Offline OR Lib.GVl_hw.Term16Offline OR Lib.GVl_hw.Term20Offline;
+CRAH_40_49(
+	Running:= CRAH_40_49_RUN_STS, 
+	Alarm:= CRAH_40_49_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_49_ISOL_1_STS, 
+	Iso1_2_Sts:= FALSE, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term17Offline OR Lib.GVl_hw.Term20Offline;
+CRAH_40_51(
+	Running:= CRAH_40_51_RUN_STS, 
+	Alarm:= CRAH_40_51_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_51_ISOL_1_STS, 
+	Iso1_2_Sts:= FALSE, 
+	Offline:= AnyIOOffline 
+);
+
+
+AnyIOOffline:= Lib.GVl_hw.Term15Offline OR Lib.GVl_hw.Term17Offline OR Lib.GVl_hw.Term20Offline;
+CRAH_40_60(
+	Running:= CRAH_40_60_RUN_STS, 
+	Alarm:= CRAH_40_60_COM_ALM, 
+	Iso1_1_Sts:= CRAH_40_60_ISOL_1_STS, 
+	Iso1_2_Sts:= FALSE, 
+	Offline:= AnyIOOffline 
+);
+
+
+
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

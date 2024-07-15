@@ -24,6 +24,9 @@
     <Compile Include="POUs\AI_OOR.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AllCRAHs.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\All_IO.TcPOU">
       <SubType>Code</SubType>
     </Compile>

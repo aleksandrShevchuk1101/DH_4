@@ -7,7 +7,108 @@ VAR_TEMP
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[//Lib.GVL_HW.CouplerOffline : = ]]></ST>
+      <ST><![CDATA[Lib.GVL_HW.CouplerOffline:= NOT Lib.GVL_HW.CouplerStatus.3;
+Lib.GVL_HW.Term02Offline := NOT Lib.GVL_HW.Term02Status.3;
+Lib.GVL_HW.Term03Offline := NOT Lib.GVL_HW.Term03Status.3;
+Lib.GVL_HW.Term04Offline := NOT Lib.GVL_HW.Term04Status.3;
+Lib.GVL_HW.Term05Offline := NOT Lib.GVL_HW.Term05Status.3;
+Lib.GVL_HW.Term06Offline := NOT Lib.GVL_HW.Term06Status.3;
+Lib.GVL_HW.Term07Offline := NOT Lib.GVL_HW.Term07Status.3;
+Lib.GVL_HW.Term08Offline := NOT Lib.GVL_HW.Term08Status.3;
+Lib.GVL_HW.Term09Offline := NOT Lib.GVL_HW.Term09Status.3;
+Lib.GVL_HW.Term10Offline := NOT Lib.GVL_HW.Term10Status.3;
+Lib.GVL_HW.Term11Offline := NOT Lib.GVL_HW.Term11Status.3;
+Lib.GVL_HW.Term12Offline := NOT Lib.GVL_HW.Term12Status.3;
+Lib.GVL_HW.Term13Offline := NOT Lib.GVL_HW.Term13Status.3;
+Lib.GVL_HW.Term14Offline := NOT Lib.GVL_HW.Term14Status.3;
+Lib.GVL_HW.Term15Offline := NOT Lib.GVL_HW.Term15Status.3;
+Lib.GVL_HW.Term16Offline := NOT Lib.GVL_HW.Term16Status.3;
+Lib.GVL_HW.Term17Offline := NOT Lib.GVL_HW.Term17Status.3;
+Lib.GVL_HW.Term18Offline := NOT Lib.GVL_HW.Term18Status.3;
+Lib.GVL_HW.Term19Offline := NOT Lib.GVL_HW.Term19Status.3;
+Lib.GVL_HW.Term20Offline := NOT Lib.GVL_HW.Term20Status.3;
+Lib.GVL_HW.Term21Offline := NOT Lib.GVL_HW.Term21Status.3;
+Lib.GVL_HW.Term22Offline := NOT Lib.GVL_HW.Term22Status.3;
+Lib.GVL_HW.Term23Offline := NOT Lib.GVL_HW.Term23Status.3;
+Lib.GVL_HW.Term24Offline := NOT Lib.GVL_HW.Term24Status.3;
+Lib.GVL_HW.Term25Offline := NOT Lib.GVL_HW.Term25Status.3;
+Lib.GVL_HW.Term26Offline := NOT Lib.GVL_HW.Term26Status.3;
+Lib.GVL_HW.Term27Offline := NOT Lib.GVL_HW.Term27Status.3;
+Lib.GVL_HW.Term28Offline := NOT Lib.GVL_HW.Term28Status.3;
+Lib.GVL_HW.Term29Offline := NOT Lib.GVL_HW.Term29Status.3;
+Lib.GVL_HW.Term30Offline := NOT Lib.GVL_HW.Term30Status.3;
+Lib.GVL_HW.Term31Offline := NOT Lib.GVL_HW.Term31Status.3;
+Lib.GVL_HW.Term32Offline := NOT Lib.GVL_HW.Term32Status.3;
+Lib.GVL_HW.Term33Offline := NOT Lib.GVL_HW.Term33Status.3;
+Lib.GVL_HW.Term34Offline := NOT Lib.GVL_HW.Term34Status.3;
+
+Lib.GVL.nInputCoilIndex := lib.GVL_DataHalls.StartInputCoilIndex_IO;
+Lib.GVL.nOutputCoilIndex:= lib.GVL_DataHalls.StartOutputCoilIndex_IO;
+Lib.GVL.nInputRegisterIndex := lib.GVL_DataHalls.StartInputCoilIndex_IO;
+Lib.GVL.nOutputRegisterIndex:= lib.GVL_DataHalls.StartOutputCoilIndex_IO;
+
+
+i:= lib.GVL.nInputCoilIndex;
+
+Lib.GVL.mb_Input_Coils[i+0] := Lib.GVL_HW.CouplerOffline;
+Lib.GVL.mb_Input_Coils[i+1] := Lib.GVL_HW.Term02Offline;
+Lib.GVL.mb_Input_Coils[i+2] := Lib.GVL_HW.Term03Offline;
+Lib.GVL.mb_Input_Coils[i+3] := Lib.GVL_HW.Term04Offline;
+Lib.GVL.mb_Input_Coils[i+4] := Lib.GVL_HW.Term05Offline;
+Lib.GVL.mb_Input_Coils[i+5] := Lib.GVL_HW.Term06Offline;
+Lib.GVL.mb_Input_Coils[i+6] := Lib.GVL_HW.Term07Offline;
+Lib.GVL.mb_Input_Coils[i+7] := Lib.GVL_HW.Term08Offline;
+Lib.GVL.mb_Input_Coils[i+8] := Lib.GVL_HW.Term09Offline;
+Lib.GVL.mb_Input_Coils[i+9] := Lib.GVL_HW.Term10Offline;
+Lib.GVL.mb_Input_Coils[i+10]:= Lib.GVL_HW.Term11Offline;
+Lib.GVL.mb_Input_Coils[i+11]:= Lib.GVL_HW.Term12Offline;
+Lib.GVL.mb_Input_Coils[i+12]:= Lib.GVL_HW.Term13Offline;
+Lib.GVL.mb_Input_Coils[i+13]:= Lib.GVL_HW.Term14Offline;
+Lib.GVL.mb_Input_Coils[i+14]:= Lib.GVL_HW.Term15Offline;
+Lib.GVL.mb_Input_Coils[i+15]:= Lib.GVL_HW.Term16Offline;
+Lib.GVL.mb_Input_Coils[i+16]:= Lib.GVL_HW.Term17Offline;
+Lib.GVL.mb_Input_Coils[i+17]:= Lib.GVL_HW.Term18Offline;
+Lib.GVL.mb_Input_Coils[i+18]:= Lib.GVL_HW.Term19Offline;
+Lib.GVL.mb_Input_Coils[i+19]:= Lib.GVL_HW.Term20Offline;
+Lib.GVL.mb_Input_Coils[i+20]:= Lib.GVL_HW.Term21Offline;
+Lib.GVL.mb_Input_Coils[i+21]:= Lib.GVL_HW.Term22Offline;
+Lib.GVL.mb_Input_Coils[i+22]:= Lib.GVL_HW.Term23Offline;
+Lib.GVL.mb_Input_Coils[i+23]:= Lib.GVL_HW.Term24Offline;
+Lib.GVL.mb_Input_Coils[i+24]:= Lib.GVL_HW.Term25Offline;
+Lib.GVL.mb_Input_Coils[i+25]:= Lib.GVL_HW.Term26Offline;
+Lib.GVL.mb_Input_Coils[i+26]:= Lib.GVL_HW.Term27Offline;
+Lib.GVL.mb_Input_Coils[i+27]:= Lib.GVL_HW.Term28Offline;
+Lib.GVL.mb_Input_Coils[i+28]:= Lib.GVL_HW.Term29Offline;
+Lib.GVL.mb_Input_Coils[i+29]:= Lib.GVL_HW.Term30Offline;
+Lib.GVL.mb_Input_Coils[i+30]:= Lib.GVL_HW.Term31Offline;
+Lib.GVL.mb_Input_Coils[i+31]:= Lib.GVL_HW.Term32Offline;
+Lib.GVL.mb_Input_Coils[i+32]:= Lib.GVL_HW.Term33Offline;
+Lib.GVL.mb_Input_Coils[i+33]:= Lib.GVL_HW.Term34Offline;
+Lib.GVL.mb_Input_Coils[i+34]:= TRUE;
+Lib.GVL.mb_Input_Coils[i+35]:= TRUE;
+Lib.GVL.mb_Input_Coils[i+36]:= TRUE;
+Lib.GVL.mb_Input_Coils[i+37]:= TRUE;
+Lib.GVL.mb_Input_Coils[i+38]:= TRUE;
+Lib.GVL.mb_Input_Coils[i+39]:= TRUE;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
