@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AllEMeters" Id="{48ce9df9-0a7d-4e94-ba91-ab3573eaeac0}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AllEMeters
+VAR
+	OneEnergyMeter: Lib.OneEnergyMeter;
+	
+	EMeter_A: OneEnergyMeter;
+	EMeter_B: OneEnergyMeter;
+	
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+Lib.GVL.nInputCoilIndex:= Lib.GVL_DataHalls.StartInputCoilIndex_E_METER;
+Lib.GVL.nOutputCoilIndex:= Lib.GVL_DataHalls.StartoutputCoilIndex_E_METER;
+Lib.GVL.nInputRegisterIndex:= Lib.GVL_DataHalls.StartInputRegisterIndex_E_METER;
+Lib.GVL.nOutputRegisterIndex:= Lib.GVL_DataHalls.StartOutputRegisterIndex_E_METER;
+
+
+EMeter_A(
+	Status:= Lib.GVL_EM.EM[1].Status, 
+	Operating_Hrs:= Lib.GVL_EM.EM[1].Operating_Hrs, 
+	Energy:= Lib.GVL_EM.EM[1].Energy, 
+	Volume:= Lib.GVL_EM.EM[1].Volume, 
+	Supply_Temp:= Lib.GVL_EM.EM[1].Supply_Temp, 
+	Return_Temp:= Lib.GVL_EM.EM[1].Return_Temp, 
+	Temp_Diff:= Lib.GVL_EM.EM[1].Temp_Diff, 
+	Offline:= Lib.GVL_HW.Term31Offline OR Lib.GVL_EM.EM[1].CommsError);
+	
+
+EMeter_B(
+	Status:= Lib.GVL_EM.EM[2].Status, 
+	Operating_Hrs:= Lib.GVL_EM.EM[2].Operating_Hrs, 
+	Energy:= Lib.GVL_EM.EM[2].Energy, 
+	Volume:= Lib.GVL_EM.EM[2].Volume, 
+	Supply_Temp:= Lib.GVL_EM.EM[2].Supply_Temp, 
+	Return_Temp:= Lib.GVL_EM.EM[2].Return_Temp, 
+	Temp_Diff:= Lib.GVL_EM.EM[2].Temp_Diff, 
+	Offline:= Lib.GVL_HW.Term31Offline OR Lib.GVL_EM.EM[2].CommsError);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

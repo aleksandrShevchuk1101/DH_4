@@ -27,6 +27,9 @@
     <Compile Include="POUs\AllCRAHs.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\AllEMeters.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\All_IO.TcPOU">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\ModbusRTU.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\ScaleDP.TcPOU">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
