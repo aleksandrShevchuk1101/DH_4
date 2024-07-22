@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="SystemTime" Id="{a716461e-b9ab-49ec-8b87-676c1f2ab50f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK SystemTime
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+Lib.GVL_HW.fbGetLocalSystemTime(
+	sNetID:= , 
+	bEnable:= TRUE, 
+	dwCycle:= 1, 
+	dwOpt:= , 
+	tTimeout:= , 
+	bValid=> , 
+	systemTime=> , 
+	tzID=> );
+	
+Lib.GVL_HW.sSystemTime:= SYSTEMTIME_TO_STRING(Lib.GVL_HW.fbGetLocalSystemTime.systemTime);
+Lib.GVL_HW.sSystemDate:=MID(STR:= Lib.GVL_HW.sSystemTime, LEN:= 10, POS:= 1);
+Lib.GVL_HW.sSystemDate:=MID(STR:= Lib.GVL_HW.sSystemTime, LEN:= 8, POS:= 12);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

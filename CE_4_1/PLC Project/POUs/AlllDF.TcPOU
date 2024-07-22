@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AlllDF" Id="{82e5b3d8-d59c-4b41-9f78-c51531b87f53}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AlllDF
+VAR
+	OneIDF: Lib.OneIDF;
+	
+	IDF17_3_A : OneIDF;
+	
+	IDF17_3_A_SPD_STS AT %I*: BOOL;
+	IDF17_3_A_PF_ALM  AT %I*: BOOL;
+	IDF17_3_A_115_BKR_STS AT %I*: BOOL;
+	IDF17_3_A_115_BKR_TRIP_ALM AT %I*: BOOL;
+	IDF17_3_A_125_BKR_STS AT %I*: BOOL;
+	IDF17_3_A_125_BKR_TRIP_ALM AT %I*: BOOL;
+	
+	IDF14_3_B: OneIDF;
+	
+	IDF14_3_B_SPD_STS AT %I*: BOOL;
+	IDF14_3_B_PF_ALM AT %I*: BOOL;
+	IDF14_3_B_115_BKR_STS AT %I* : BOOL;
+	IDF14_3_B_115_BKR_TRIP_ALM AT %I* : BOOL;
+	IDF14_3_B_125_BKR_STS AT %I* : BOOL;
+	IDF14_3_B_125_BKR_TRIP_ALM AT %I* : BOOL;
+	
+	IDF17_3_A_XT4S_10F1_TRIP_ALM AT %I* : BOOL;
+	IDF14_3_B_XT4S_10F1_TRIP_ALM AT %I* : BOOL;
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Lib.GVL.nInputCoilIndex:= Lib.GVL_DataHalls.StartInputCoilIndex_IDF;
+Lib.GVL.nOutputCoilIndex:= Lib.GVL_DataHalls.StartOutputCoilIndex_IDF;
+Lib.GVL.nInputRegisterIndex:= Lib.GVL_DataHalls.StartInputRegisterIndex_IDF;
+Lib.GVL.nOutputRegisterIndex:= Lib.GVL_DataHalls.StartOutputRegisterIndex_IDF;
+
+
+IDF17_3_A(
+	sur_STS:= IDF17_3_A_SPD_STS, 
+	phs_ALM:= IDF17_3_A_PF_ALM, 
+	sur_phs_offline:= Lib.GVL_HW.Term20Offline, 
+	BRK115_POS_STS:= IDF17_3_A_115_BKR_STS, 
+	BRK115_TRIP_ALM:= IDF17_3_A_115_BKR_TRIP_ALM, 
+	BRK115_offline:= Lib.GVL_HW.Term20Offline, 
+	BRK125_POS_STS:= IDF17_3_A_125_BKR_STS, 
+	BRK125_TRIP_ALM:= IDF17_3_A_125_BKR_TRIP_ALM, 
+	BRK125_offline:= Lib.GVL_HW.Term20Offline, 
+	INCOMER_TRIP_ALM:= IDF17_3_A_XT4S_10F1_TRIP_ALM, 
+	INCOMER_offline:= Lib.GVL_HW.Term21Offline);
+	
+	
+IDF14_3_B(
+	sur_STS:= IDF14_3_B_SPD_STS, 
+	phs_ALM:= IDF14_3_B_PF_ALM, 
+	sur_phs_offline:= Lib.GVL_HW.Term20Offline, 
+	BRK115_POS_STS:= IDF14_3_B_115_BKR_STS, 
+	BRK115_TRIP_ALM:= IDF14_3_B_115_BKR_TRIP_ALM, 
+	BRK115_offline:= Lib.GVL_HW.Term30Offline, 
+	BRK125_POS_STS:= IDF14_3_B_125_BKR_STS, 
+	BRK125_TRIP_ALM:= IDF14_3_B_125_BKR_TRIP_ALM, 
+	BRK125_offline:= Lib.GVL_HW.Term30Offline, 
+	INCOMER_TRIP_ALM:= IDF14_3_B_XT4S_10F1_TRIP_ALM, 
+	INCOMER_offline:= Lib.GVL_HW.Term21Offline);
+	
+	
+	
+	]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

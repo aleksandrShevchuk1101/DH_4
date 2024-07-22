@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="AllRTUStat" Id="{e356c409-fd3b-45ab-874b-6dddafc74f0a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK AllRTUStat
+VAR
+	i:INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Lib.GVL.nInputCoilIndex:= Lib.GVL_DataHalls.StartInputCoilIndex_RTUStat;
+Lib.GVL.nOutputCoilIndex:= Lib.GVL_DataHalls.StartOutputCoilIndex_RTUStat;
+Lib.GVL.nInputRegisterIndex:= Lib.GVL_DataHalls.StartInputRegisterIndex_RTUStat;
+Lib.GVL.nOutputRegisterIndex:= Lib.GVL_DataHalls.StartOutputRegisterIndex_RTUStat;
+
+i := Lib.GVL.nInputCoilIndex;
+
+Lib.GVL.mb_Input_Coils[i+0] := Lib.GVL_THT.THT[1].CommsError;
+Lib.GVL.mb_Input_Coils[i+1] := Lib.GVL_THT.THT[2].CommsError;
+Lib.GVL.mb_Input_Coils[i+2] := Lib.GVL_THT.THT[3].CommsError;
+Lib.GVL.mb_Input_Coils[i+3] := Lib.GVL_THT.THT[4].CommsError;
+Lib.GVL.mb_Input_Coils[i+4] := Lib.GVL_THT.THT[5].CommsError;
+Lib.GVL.mb_Input_Coils[i+5] := Lib.GVL_THT.THT[6].CommsError;
+Lib.GVL.mb_Input_Coils[i+6] := Lib.GVL_THT.THT[7].CommsError;
+Lib.GVL.mb_Input_Coils[i+7] := Lib.GVL_THT.THT[8].CommsError;
+Lib.GVL.mb_Input_Coils[i+8] := Lib.GVL_THT.THT[9].CommsError;
+Lib.GVL.mb_Input_Coils[i+9] := Lib.GVL_THT.THT[10].CommsError;
+Lib.GVL.mb_Input_Coils[i+10]:= Lib.GVL_THT.THT[11].CommsError;
+Lib.GVL.mb_Input_Coils[i+11]:= Lib.GVL_THT.THT[12].CommsError;
+Lib.GVL.mb_Input_Coils[i+12]:= Lib.GVL_THT.THT[13].CommsError;
+Lib.GVL.mb_Input_Coils[i+13]:= Lib.GVL_THT.THT[14].CommsError;
+
+Lib.GVL.mb_Input_Coils[i+14]:= Lib.GVL_EM.EM[1].CommsError;
+Lib.GVL.mb_Input_Coils[i+15]:= Lib.GVL_EM.EM[2].CommsError;
+
+Lib.GVL.mb_Input_Registers[i+0] := INT_TO_WORD(Lib.GVL_THT.THT[1].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+1] := INT_TO_WORD(Lib.GVL_THT.THT[2].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+2] := INT_TO_WORD(Lib.GVL_THT.THT[3].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+3] := INT_TO_WORD(Lib.GVL_THT.THT[4].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+4] := INT_TO_WORD(Lib.GVL_THT.THT[5].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+5] := INT_TO_WORD(Lib.GVL_THT.THT[6].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+6] := INT_TO_WORD(Lib.GVL_THT.THT[7].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+7] := INT_TO_WORD(Lib.GVL_THT.THT[8].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+8] := INT_TO_WORD(Lib.GVL_THT.THT[9].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+9] := INT_TO_WORD(Lib.GVL_THT.THT[10].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+10]:= INT_TO_WORD(Lib.GVL_THT.THT[11].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+11]:= INT_TO_WORD(Lib.GVL_THT.THT[12].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+12]:= INT_TO_WORD(Lib.GVL_THT.THT[13].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+13]:= INT_TO_WORD(Lib.GVL_THT.THT[14].CommsErrorCode);
+
+Lib.GVL.mb_Input_Registers[i+14]:= INT_TO_WORD(Lib.GVL_THT.THT[15].CommsErrorCode);
+Lib.GVL.mb_Input_Registers[i+15]:= INT_TO_WORD(Lib.GVL_THT.THT[16].CommsErrorCode);
+
+
+
+
+
+
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
